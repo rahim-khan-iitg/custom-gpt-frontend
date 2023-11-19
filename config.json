@@ -1,17 +1,17 @@
 {
-    "readmeUrl": "./",
-    "title": "LiveTerm",
-    "name": "John Doe",
+    "readmeUrl": "https://github.com/rahim-khan-iitg/custom-llm/blob/master/README.md",
+    "title": "Custom LLM",
+    "name": "Rahim Khan",
     "ascii": "custom-llm",
     "social": {
       "github": "github",
       "linkedin": "linkedin"
     },
-    "email": "contact@email.com",
+    "email": "k.rahim@iitg.ac.in",
     "ps1_hostname": "custom-llm",
     "ps1_username": "visitor",
-    "repo": "https://github.com/",
-    "resume_url": "https://uploa",
+    "repo": "https://github.com/rahim-khan-iitg/custom-llm.git",
+    "resume_url": "https://github.com/rahim-khan-iitg/custom-llm/blob/master/rahim_khan_222123040_1.pdf",
     "colors": {
       "light": {
         "background": "#FBF1C9",
