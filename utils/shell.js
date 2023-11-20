@@ -5,7 +5,8 @@ export const shell = async (
   command,
   setHistory,
   clearHistory,
-  setCommand
+  setCommand,
+  chatOptions
 ) => {
   const args = command.split(' ');
   args[0] = args[0].toLowerCase();
@@ -14,7 +15,11 @@ export const shell = async (
     clearHistory();
   } else if (command === '') {
     setHistory('');
-  } else if (Object.keys(bin).indexOf(args[0]) === -1) {
+  }else if(chatOptions=="chat")
+  {
+    setHistory(args.join(" "));
+  }
+   else if (Object.keys(bin).indexOf(args[0]) === -1) {
     setHistory(
       `shell: command not found: ${args[0]}. Try 'help' to get started.`,
     );

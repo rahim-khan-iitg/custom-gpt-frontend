@@ -37,7 +37,7 @@ const IndexPage = ({ inputRef }) => {
         <title>{config.title}</title>
       </Head>
 
-      <div className="p-5 overflow-hidden h-full w-full border-2 rounded border-light-yellow dark:border-dark-yellow bg-black text-green-600">
+      <div className="p-5 overflow-hidden h-full w-full bg-black text-green-500">
         <div ref={containerRef} className="overflow-y-auto h-full">
           <History history={history} />
 
