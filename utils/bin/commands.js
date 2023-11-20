@@ -52,6 +52,11 @@ export const github = async (args) => {
 
   return 'Opening github...';
 };
+export const documentation = async (args) => {
+  window.open(`https://github.com/${config.readmeUrl}/`);
+
+  return 'Opening github...';
+};
 
 export const linkedin = async (args) => {
   window.open(`https://www.linkedin.com/in/${config.social.linkedin}/`);
