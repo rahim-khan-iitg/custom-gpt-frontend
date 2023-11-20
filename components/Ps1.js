@@ -1,4 +1,5 @@
 import config from "../config.json"
+import {Camera} from "lucide-react"
 export const Ps1 = (pageProps) => {
     return (
       <div>
