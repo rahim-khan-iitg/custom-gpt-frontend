@@ -94,14 +94,6 @@ Type 'sumfetch' to display summary.
 Type 'repo' or click <u><a class="text-light-blue dark:text-dark-blue underline" href="${config.repo}" target="_blank">here</a></u> for the Github repository.
 `;
 };
-
-export const chat = async (args) => {
-  return "you are now using LLM";
-};
-
-export const query=async(args)=>{
-  return "now db is connected"
-}
 export const exit=async(args)=>{
   return;
 }

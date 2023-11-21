@@ -19,3 +19,16 @@ export const getQuote = async () => {
     quote: `“${data.content}” — ${data.author}`,
   };
 };
+
+export const getChat = async (args) => {
+  let question=args.join(" ");
+  const {data}=await axios.post("https://rahimkhan76.pythonanywhere.com/chat",{"question":question})
+  return data
+};
+
+export const getQuery=async(args)=>{
+  let question=args.join(" ");
+  const {data}=await axios.post("https://rahimkhan76.pythonanywhere.com/query",{"question":question})
+  let x=data['query']+"\n"+data["result"];
+  return x;
+}

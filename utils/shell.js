@@ -1,5 +1,7 @@
 import React from 'react';
 import * as bin from './bin';
+import { chat } from './bin';
+import { query } from './bin';
 
 export const shell = async (
   command,
@@ -11,10 +13,14 @@ export const shell = async (
   const args = command.split(' ');
   args[0] = args[0].toLowerCase();
   if (chatOptions == "chat") {
-    setHistory(args.join(" "));
+    const output = await chat(args);
+    console.log(output)
+    setHistory(output);
   }
   else if (chatOptions == "query") {
-    setHistory(args.join(" "));
+    const output = await query(args);
+    console.log(output)
+      setHistory(output);
   }
   else {
     if (args[0] === 'clear') {

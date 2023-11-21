@@ -3,6 +3,8 @@
 import { getProjects } from '../api';
 import { getQuote } from '../api';
 import { getReadme } from '../api';
+import { getQuery } from '../api';
+import { getChat } from '../api';
 
 export const projects = async (args) => {
   const projects = await getProjects();
@@ -24,3 +26,12 @@ export const readme = async (args) => {
   return `Opening GitHub README...\n
   ${readme}`;
 };
+
+export const query=async(args)=>{
+  const q=await getQuery(args);
+  return q;
+}
+export const chat=async(args)=>{
+  const q=await getChat(args);
+  return q;
+}
