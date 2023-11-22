@@ -22,13 +22,13 @@ export const getQuote = async () => {
 
 export const getChat = async (args) => {
   let question=args.join(" ");
-  const {data}=await axios.post("https://rahimkhan76.pythonanywhere.com/chat",{"question":question})
-  return data
+  const {data}=await axios.post(config.CHAT_API_ENDPOINT,{"question":question})
+  return "Question: "+question+"\nAnswer: "+data;
 };
 
 export const getQuery=async(args)=>{
   let question=args.join(" ");
-  const {data}=await axios.post("https://rahimkhan76.pythonanywhere.com/query",{"question":question})
-  let x=data['query']+"\n"+data["result"];
+  const {data}=await axios.post(config.QUERY_API_ENDPOINT,{"question":question})
+  let x="Question: "+data['query']+"\nAnswer: "+data["result"];
   return x;
 }

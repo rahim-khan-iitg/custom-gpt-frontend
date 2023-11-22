@@ -14,12 +14,10 @@ export const shell = async (
   args[0] = args[0].toLowerCase();
   if (chatOptions == "chat") {
     const output = await chat(args);
-    console.log(output)
     setHistory(output);
   }
   else if (chatOptions == "query") {
     const output = await query(args);
-    console.log(output)
       setHistory(output);
   }
   else {
