@@ -1,8 +1,8 @@
 {
     "readmeUrl": "rahim-khan-iitg/custom-llm#readme",
-    "title": "Custom LLM",
+    "title": "Custom GPT",
     "name": "Rahim Khan",
-    "ascii": "custom-llm",
+    "ascii": "custom-gpt",
     "QUERY_API_ENDPOINT":"https://cstmrsrce.happystone-dd77b9b8.centralindia.azurecontainerapps.io/query",
     "CHAT_API_ENDPOINT":"https://cstmrsrce.happystone-dd77b9b8.centralindia.azurecontainerapps.io/chat",
     "social": {
@@ -10,7 +10,7 @@
       "linkedin": "rahim-khan-iitg"
     },
     "email": "k.rahim@iitg.ac.in",
-    "ps1_hostname": "custom-llm",
+    "ps1_hostname": "custom-gpt",
     "ps1_username": "visitor",
     "repo": "https://github.com/rahim-khan-iitg/custom-llm.git",
     "resume_url": "https://github.com/rahim-khan-iitg/custom-llm/blob/master/rahim_khan_222123040_1.pdf",
