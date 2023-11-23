@@ -1,40 +1,60 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Chaabi Assignment 2023
+This Repository contains the code for custom gpt . Which can generate the answers from the given context. Here we have used a CSV file as source for context. which can be found [here](https://github.com/rahim-khan-iitg/custom-gpt-backend/tree/master/data). 
 
-## Getting Started
+<b>This Project is divided into 2 section <i>Backend</i> and <i>Frontend</i> . This Repo contains the frontend part and Backend can be found [here](https://github.com/rahim-khan-iitg/custom-gpt-backend) 
 
-First, run the development server:
+<b>Deployed version of the repo can be accessed [here](https://custom-gpt-five.vercel.app/)</b>
 
-```bash
+
+## Setup
+This app is made using Next js so latest version of Node js should be installed on the machine. 
+- step 1
+```
+# clone the repo
+git clone https://github.com/rahim-khan-iitg/custom-gpt-frontend.git
+# change directory
+cd custom-gpt-frontend
+# install the required libraries
+npm install
+```
+- step 2 \
+all the necessary settings are defined in the ```config.json``` file make necessary changes if required .
+- step 3 
+```
+# run the app
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+```
+this command will run the app at ``` http://localhost:3000/ ``` now you can access the app. which is a command line interface .
+
+## Available Commands
+- <b>help</b> : This command provides the list of all the commands and shortcut keys  available for use .
+- <b>about</b> : it shows the about section of the app.
+- <b>clear</b> : it will clear the command window.
+- <b>documentation/readme</b> : These both commands does the same work. it will this readme in the new tab of the browser.
+- <b>github</b>: it will open my github profile page .
+- <b>chat</b>: this command can be used for simple question answers to the large language model without any context.
+- <b>query</b>: this the command which can be used to ask question from the given data set which was given in the assignment.
+- <b>exit</b> : when you will write the command chat or query you will be entered in the query or chat mode in this mode other commands will not work only we can ask question to LLM with or without context . the exit command is used to exit from this mode.
+- <b>resume</b>: this command will open my resume in new tab. \
+and some other commands are also available. these commands are not relevant to the assignment.
+## some shortcut keys
+- <b> ctrl+l(L)</b>: this is the shortcut key for clear command.
+- <b>up/down Arrow</b>: these buttons can be used to navigate the previous commands and questions.
+
+### result of some queries with context
+<i>while running chat and query commands it can take some time because it is running on free resources on azure container service</i>
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Question: what is the description of the veggies cutter?
+Answer: Rithu Multi Purpose Vegetable Cutter facilitates in cutting vegetables with the precise thickness of your choice. It is a must have kitchen tool which is easy to use and clean
+Question: what is the sale price of Garlic Oil - Vegetarian Capsule 500 mg?
+Answer: 220
+Question: what is the rating of Flaxseed - Pesticide Free ?
+Answer: 4
+Question: tell me some products from beverages category
+Answer: Non-Alcoholic Beer Bottle - Malt Beverage, Strawberry Flavour
+Question: what is the market price of Cake Gel?
+Answer: 90
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```
+for the backend implementation please [click here](https://github.com/rahim-khan-iitg/custom-gpt-backend)
