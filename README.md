@@ -30,7 +30,7 @@ this command will run the app at ``` http://localhost:3000/ ``` now you can acce
 - <b>help</b> : This command provides the list of all the commands and shortcut keys  available for use .
 - <b>about</b> : it shows the about section of the app.
 - <b>clear</b> : it will clear the command window.
-- <b>documentation/readme</b> : These both commands does the same work. it will this readme in the new tab of the browser.
+- <b>documentation/readme</b> : These both commands does the same work. it will open this readme in the new tab of the browser.
 - <b>github</b>: it will open my github profile page .
 - <b>chat</b>: this command can be used for simple question answers to the large language model without any context.
 - <b>query</b>: this the command which can be used to ask question from the given data set which was given in the assignment.
