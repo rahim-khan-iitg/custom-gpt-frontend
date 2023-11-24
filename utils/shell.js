@@ -18,7 +18,7 @@ export const shell = async (
   }
   else if (chatOptions == "query") {
     const output = await query(args);
-      setHistory(output);
+    setHistory(output);
   }
   else {
     if (args[0] === 'clear') {
@@ -29,7 +29,16 @@ export const shell = async (
       setHistory(
         `shell: command not found: ${args[0]}. Try 'help' to get started.`,
       );
-    } else {
+    }else if(args[0]=="chat"){
+      setHistory("chat mode is active now");
+    } 
+    else if(args[0]=="query"){
+      setHistory("query mode is active now");
+    }
+    else if(args[0]=="exit"){
+      setHistory("closing chat or query mode");
+    }
+    else {
       const output = await bin[args[0]](args.slice(1));
       setHistory(output);
     }

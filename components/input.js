@@ -42,20 +42,22 @@ export const Input = ({
     if (event.key === 'Enter' || event.code === '13') {
       event.preventDefault();
       setLastCommandIndex(0);
-      await shell(command, setHistory, clearHistory, setCommand,chatOptions);
-      containerRef.current.scrollTo(0, containerRef.current.scrollHeight);
       if(command=="chat")
       {
         setChatOptions("chat");
+        
       }
-      if(command=="query")
+      else if(command=="query")
       {
         setChatOptions("query");
       }
-      if(command=="exit")
+      else if(command=="exit")
       {
         setChatOptions("")
       }
+    
+        await shell(command, setHistory, clearHistory, setCommand,chatOptions);
+        containerRef.current.scrollTo(0, containerRef.current.scrollHeight);
     }
 
     if (event.key === 'ArrowUp') {
