@@ -12,11 +12,11 @@ export const shell = async (
 ) => {
   const args = command.split(' ');
   args[0] = args[0].toLowerCase();
-  if (chatOptions == "chat") {
+  if (chatOptions == "chat" && args[0]!="exit") {
     const output = await chat(args);
     setHistory(output);
   }
-  else if (chatOptions == "query") {
+  else if (chatOptions == "query" && args[0]!="exit") {
     const output = await query(args);
     setHistory(output);
   }
