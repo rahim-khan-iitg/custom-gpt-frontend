@@ -17,6 +17,7 @@ export const Input = ({
   clearHistory,
 }) => {
   const [chatOptions,setChatOptions]=useState(" ");
+  const [loading,setLoading]=useState(false);
   const onSubmit = async (event) => {
     const commands = history
       .map(({ command }) => command)
@@ -55,9 +56,10 @@ export const Input = ({
       {
         setChatOptions("")
       }
-    
+        setLoading(true);
         await shell(command, setHistory, clearHistory, setCommand,chatOptions);
         containerRef.current.scrollTo(0, containerRef.current.scrollHeight);
+        setLoading(false);
     }
 
     if (event.key === 'ArrowUp') {
@@ -97,7 +99,7 @@ export const Input = ({
   return (
     <div className="flex flex-row space-x-2">
       <label htmlFor="prompt" className="flex-shrink">
-        <Ps1 custom={chatOptions} />
+        <Ps1 custom={chatOptions} load={loading}/>
         
       </label>
 
