@@ -58,8 +58,9 @@ export const Input = ({
       }
         setLoading(true);
         await shell(command, setHistory, clearHistory, setCommand,chatOptions);
-        containerRef.current.scrollTo(0, containerRef.current.scrollHeight);
         setLoading(false);
+        containerRef.current.scrollTo(0, containerRef.current.scrollHeight);
+        
     }
 
     if (event.key === 'ArrowUp') {
