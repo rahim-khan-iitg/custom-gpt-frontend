@@ -69,11 +69,6 @@ export const whoami = async (args) => {
   return `${config.ps1_username}`;
 };
 
-export const cd = async (args) => {
-  return `unfortunately, i cannot afford more directories.
-if you want to help, you can type 'donate'.`;
-};
-
 export const date = async (args) => {
   return new Date().toString();
 };
